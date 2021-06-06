@@ -10,16 +10,13 @@ int main()
         cin >> D >> d >> p >> q;
         int sum = 0;
         int n = D / d;
+        int m = D % d;
+        for (int i = 0; i < n; i++)
         {
-            if (n * d < D)
-            {
-                n = n + D % d;
-            }
+            sum = sum + (p + i * q) * d;
         }
-        for (int i = 0; i <= n; i++)
-        {
-            sum = (p + n * q) * d;
-        }
+
+        sum = sum + (p + n * q) * m;
 
         cout << sum << endl;
     }
