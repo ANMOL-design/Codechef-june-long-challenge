@@ -9,7 +9,7 @@ int main()
         long long int D, d, p, q;
         cin >> D >> d >> p >> q;
         int sum = 0;
-        int n = D / d;
+        int n = 
         int m = D % d;
         for (int i = 0; i < n; i++)
         {
